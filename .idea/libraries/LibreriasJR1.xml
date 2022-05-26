@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="LibreriasJR1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/groovy-2.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/jcalendar-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/jasperreports-6.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/itextpdf-5.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/AbsoluteLayout.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/mysql-connector-java-5.0.8-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/LibreriasJR/itext-pdfa-5.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

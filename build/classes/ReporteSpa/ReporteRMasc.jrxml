@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteRMasc" language="groovy" pageWidth="1580" pageHeight="612" orientation="Landscape" columnWidth="1540" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a2232d25-663a-4c3e-b1a8-fa7781b38ff2">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="140d778e-5094-4dfd-9ffb-ac8b1a81f006"/>
+	<queryString>
+		<![CDATA[SELECT
+     registrosusu.`ID` AS registrosusu_ID,
+     registrosusu.`Nombre` AS registrosusu_Nombre,
+     registrosusu.`Apellido` AS registrosusu_Apellido,
+     registrosusu.`CC` AS registrosusu_CC,
+     registrosusu.`Genero` AS registrosusu_Genero,
+     registrosusu.`FechaNac` AS registrosusu_FechaNac,
+     registrosusu.`TipoMasc` AS registrosusu_TipoMasc,
+     registrosusu.`NomMasc` AS registrosusu_NomMasc,
+     registrosusu.`TiempMac` AS registrosusu_TiempMac,
+     registrosusu.`CantVac` AS registrosusu_CantVac,
+     registrosusu.`Peso` AS registrosusu_Peso
+FROM
+     `registrosusu` registrosusu]]>
+	</queryString>
+	<field name="registrosusu_ID" class="java.lang.String"/>
+	<field name="registrosusu_Nombre" class="java.lang.String"/>
+	<field name="registrosusu_Apellido" class="java.lang.String"/>
+	<field name="registrosusu_CC" class="java.lang.String"/>
+	<field name="registrosusu_Genero" class="java.lang.String"/>
+	<field name="registrosusu_FechaNac" class="java.sql.Date"/>
+	<field name="registrosusu_TipoMasc" class="java.lang.String"/>
+	<field name="registrosusu_NomMasc" class="java.lang.String"/>
+	<field name="registrosusu_TiempMac" class="java.lang.String"/>
+	<field name="registrosusu_CantVac" class="java.lang.String"/>
+	<field name="registrosusu_Peso" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="530" y="11" width="546" height="39" uuid="5eee6211-91c8-4e89-90c2-c94b763fc2a3"/>
+				<textElement>
+					<font fontName="Arial" size="24" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE REGISTROS DE LA VETERINARIA]]></text>
+			</staticText>
+			<line>
+				<reportElement x="21" y="63" width="1491" height="1" uuid="ca3900f8-e8b3-42f6-bba6-cb2a011fce4f"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="294" y="0" width="236" height="29" uuid="1403bfa2-d17a-4b78-9cfa-c66d12eb8f05"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATOS - PERSONALES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1090" y="0" width="207" height="29" uuid="aba04578-1b67-4c0c-91e2-635ca8a227ed"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATOS - MASCOTA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="21" y="0" width="100" height="20" uuid="e0b0be8f-63f4-46ef-a9a9-f95e320115e0"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CODIGO[ID]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="0" width="100" height="20" uuid="64427a8a-5b2e-4a39-91bf-54d087f51817"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="294" y="0" width="100" height="20" uuid="69d8cc2f-728d-46f3-b035-307325c98b64"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[APELLIDO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="100" height="20" uuid="c05e4f3a-cca6-41e0-9221-05fc14be20e4"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CC/T.I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="577" y="0" width="100" height="20" uuid="ac7106e3-b003-4878-9dbb-4ed1134af9af"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[GENERO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="725" y="0" width="100" height="20" uuid="ef62fcc9-df7e-4575-b26a-fb4eefd37124"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[FECHA_NAC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="874" y="0" width="100" height="20" uuid="604f31b1-0736-4e79-b244-6f83a3b1e611"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[TIPO_MASCOTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1011" y="0" width="100" height="20" uuid="9147ff0f-62d4-4593-aad6-6b39bc89d573"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE_MASC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1146" y="0" width="100" height="20" uuid="e5eae76a-273f-4aba-8372-b28f432613ea"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[TIME_MASC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1278" y="0" width="100" height="20" uuid="d4bb74df-3acd-4bf4-bfc1-c3eb6b36e6e7"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CANT_VACUNAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1412" y="0" width="100" height="20" uuid="f7462bed-a304-4884-9717-e2dea5afb780"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[PESO(Kg)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="64" splitType="Stretch">
+			<rectangle>
+				<reportElement x="863" y="5" width="660" height="49" forecolor="#FF3333" uuid="3dcc935b-834b-4149-bbfa-930830ea71c0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="5" width="825" height="49" forecolor="#0066FF" uuid="1ecb6aae-92bc-48c4-8d33-47924e530fa9"/>
+			</rectangle>
+			<textField>
+				<reportElement x="21" y="20" width="100" height="20" uuid="46adc4da-3b57-438b-bc13-ebd3ca023e83"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="157" y="20" width="100" height="20" uuid="af50c31a-3410-41c9-a68f-9fbc75d09d74"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_Nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="20" width="100" height="20" uuid="11ca22ce-80fd-4d8c-8f65-b6814d147944"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_Apellido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="20" width="100" height="20" uuid="62453567-5c3f-417d-8094-bfbaa915be53"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_CC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="577" y="20" width="100" height="20" uuid="54082b9b-3d01-4f82-b393-7b0e2b0b7e7d"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_Genero}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="725" y="20" width="104" height="20" uuid="a3c9d955-2acc-4652-b2ae-a85482ab4d73"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_FechaNac}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="874" y="20" width="100" height="20" uuid="27166173-e509-45f8-a2b6-a72b01471286"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_TipoMasc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1011" y="20" width="100" height="20" uuid="b1849bda-f3df-401f-8f7e-80645f81fc9b"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_NomMasc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1146" y="20" width="100" height="20" uuid="f035155e-ac16-4582-8d17-5ae6a1f98392"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_TiempMac}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1278" y="20" width="100" height="20" uuid="4c5c590e-e689-49d3-9a6c-a4d314d22187"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_CantVac}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1412" y="20" width="100" height="20" uuid="09510146-faf4-4a09-af10-cdd574979568"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{registrosusu_Peso}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="46" splitType="Stretch">
+			<textField>
+				<reportElement x="709" y="14" width="80" height="20" uuid="8c57f439-d84d-496b-8c20-b0a82fb6a040"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="789" y="14" width="40" height="20" uuid="ae9f1629-7169-4b9b-a0b3-4348880a13a2"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="1393" y="14" width="119" height="20" uuid="f06433a7-13a0-416a-bc9f-e80db96dd502"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="14" splitType="Stretch"/>
+	</summary>
+</jasperReport>
